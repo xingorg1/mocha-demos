@@ -9,4 +9,8 @@ describe('加法函数的测试', function() {
   it('任何数加0应该等于自身', function() {
     expect(add(1, 0)).to.be.equal(1);
   });
+
+  it.skip('这个测试用例会被跳过', function() {
+    expect(add(1, 0)).to.be.equal(1);
+  });
 });

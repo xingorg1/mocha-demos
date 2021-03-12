@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 describe("Hook示例", function(){
   var foo = false;
 
-  beforeEach(function(done){
+  beforeEach(function(done){ // 演示: 如何在beforeEach之中使用异步操作。
     setTimeout(function(){
       foo = true;
       done();

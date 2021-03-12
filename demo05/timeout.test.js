@@ -12,4 +12,10 @@ describe('timeout.test.js - 超时测试', function() {
   });
 });
 
+// function it(name, callback){
+//   callback(done)
+//   function done() {
+//     close()
+//   }
+// }
 

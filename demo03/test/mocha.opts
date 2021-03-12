@@ -1,3 +1,5 @@
---reporter spec
+server-tests
+--reporter nyan
 --recursive
 --growl
+--watch
