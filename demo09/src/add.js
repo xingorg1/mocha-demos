@@ -1,5 +1,7 @@
 function add(x, y) {
+  console.log(x, y);
   return x + y;
 }
-
-module.exports = add;
+const result = add(3,4)
+console.log(result)
+// module.exports = add;
