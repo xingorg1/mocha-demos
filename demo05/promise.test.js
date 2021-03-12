@@ -17,13 +17,15 @@ describe('promise - promise测试', function() {
   it('promise请求测试', function() {
     return new Promise((res, rej) => {
       // res(123)
+      throw 'errors'
       rej('出错了~')
     }).then((data) => {
       // expect(data).to.be.equal(123)
       expect(data).to.be.a('string')
     }).catch((err) => {
       console.log(err);
-      expect(err).to.be.an('object')
+      // expect(err).to.be.an('object')
+      expect(err).to.not.throw() // 期待能判断err是一个错误对象
     })
   });
 });
